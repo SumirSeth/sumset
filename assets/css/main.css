@@ -1,1 +1,15 @@
 @import "tailwindcss";
+@custom-variant dark (&:where([data-theme=dark], [data-theme=dark] *));
+@custom-variant nord (&:where([data-theme=nord], [data-theme=nord] *));
+
+.theme-box {
+    @apply p-4 rounded-lg shadow-md;
+  }
+  
+  [data-theme="dark"] .theme-box {
+    @apply bg-black text-white;
+  }
+  
+  [data-theme="nord"] .theme-box {
+    @apply bg-[#2E3440] text-[#D8DEE9];
+  }
