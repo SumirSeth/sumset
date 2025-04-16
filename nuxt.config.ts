@@ -9,7 +9,7 @@ export default defineNuxtConfig({
                     },
   compatibilityDate: "2025-04-15",
   devtools: { enabled: true },
-  modules: ['@nuxt/fonts', '@nuxt/icon'],
+  modules: ['@nuxt/fonts', '@nuxt/icon', '@nuxt/image'],
   app: {
     head: {
       htmlAttrs: {

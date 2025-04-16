@@ -12,7 +12,7 @@ html.no-theme-transition {
     @apply transition-all duration-500 ease-in-out;
   }
 
-.txtarea {
+.theme-txtarea {
   @apply transition-all duration-300 ease-in-out;
 }
   
@@ -27,16 +27,30 @@ html.no-theme-transition {
     @apply bg-white text-black;
   }
 
-  /*txtarea*/
+  /*theme-txtarea*/
 
-  [data-theme="dark"] .txtarea {
+  [data-theme="dark"] .theme-txtarea {
     @apply bg-gray-900 text-white;
   }
   
-  [data-theme="nord"] .txtarea {
+  [data-theme="nord"] .theme-txtarea {
     @apply bg-[#383f4d] text-[#D8DEE9];
   }
 
-  [data-theme="light"] .txtarea {
+  [data-theme="light"] .theme-txtarea {
     @apply bg-gray-200 text-black;
+  }
+
+  /* theme-menu */
+
+  [data-theme="dark"] .theme-menu {
+    @apply dark:bg-white/5 text-white;
+  }
+  
+  [data-theme="nord"] .theme-menu {
+    @apply bg-[#383f4d]/10 text-[#D8DEE9];
+  }
+
+  [data-theme="light"] .theme-menu {
+    @apply bg-black/10 text-black;
   }
