@@ -6,3 +6,8 @@
 - [ ] user will be able to view notes in markdown format.
 - [ ] dark and light mode.
 - [ ] auth
+- [ ] content (rich md)
+- [ ] meta data
+- [ ] full screen view
+- [ ] robust explorer
+- [ ] autosave with debounce (500ms)
