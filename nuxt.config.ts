@@ -9,5 +9,12 @@ export default defineNuxtConfig({
                     },
   compatibilityDate: "2025-04-15",
   devtools: { enabled: true },
-  modules: ['@nuxt/fonts', '@nuxt/icon']
+  modules: ['@nuxt/fonts', '@nuxt/icon'],
+  app: {
+    head: {
+      htmlAttrs: {
+        class: 'no-theme-transition',
+      }
+    }
+  }
 })

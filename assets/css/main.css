@@ -2,8 +2,14 @@
 @custom-variant dark (&:where([data-theme=dark], [data-theme=dark] *));
 @custom-variant nord (&:where([data-theme=nord], [data-theme=nord] *));
 
+
+html.no-theme-transition *,
+html.no-theme-transition {
+  transition: none !important;
+}
+
 .theme-box {
-    @apply p-4 rounded-lg shadow-md;
+    @apply transition-all duration-500 ease-in-out;
   }
   
   [data-theme="dark"] .theme-box {
@@ -12,4 +18,8 @@
   
   [data-theme="nord"] .theme-box {
     @apply bg-[#2E3440] text-[#D8DEE9];
+  }
+
+  [data-theme="light"] .theme-box {
+    @apply bg-white text-black;
   }
