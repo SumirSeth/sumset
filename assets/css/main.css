@@ -11,6 +11,10 @@ html.no-theme-transition {
 .theme-box {
     @apply transition-all duration-500 ease-in-out;
   }
+
+.txtarea {
+  @apply transition-all duration-300 ease-in-out;
+}
   
   [data-theme="dark"] .theme-box {
     @apply bg-black text-white;
@@ -19,7 +23,20 @@ html.no-theme-transition {
   [data-theme="nord"] .theme-box {
     @apply bg-[#2E3440] text-[#D8DEE9];
   }
-
   [data-theme="light"] .theme-box {
     @apply bg-white text-black;
+  }
+
+  /*txtarea*/
+
+  [data-theme="dark"] .txtarea {
+    @apply bg-gray-900 text-white;
+  }
+  
+  [data-theme="nord"] .txtarea {
+    @apply bg-[#383f4d] text-[#D8DEE9];
+  }
+
+  [data-theme="light"] .txtarea {
+    @apply bg-gray-200 text-black;
   }
